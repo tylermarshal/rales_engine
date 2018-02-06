@@ -1,6 +1,6 @@
 # Rales Engine
 
-Rales(Sales?) Engine is a RESTful API for eCommerce business intelligence. It is made with Ruby on Rails and returns JSON objects for Merchants, Customers, Invoices, Items, Invoice Items and Transactions. Below are instructions on how to setup, install, deploy, run tests, and make API calls.
+Rales (Sales) Engine is a RESTful API for eCommerce business intelligence. It is made with Ruby on Rails and returns JSON objects for Merchants, Customers, Invoices, Items, Invoice Items and Transactions. Below are instructions on how to setup, install, deploy, run tests, and make API calls.
 
 ## Setup & Installation
 
