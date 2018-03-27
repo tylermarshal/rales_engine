@@ -101,7 +101,6 @@ the following urls in the browser after starting the server using `rails s` in t
 'http://localhost:3000/api/v1/merchants/:id/invoices'
 'http://localhost:3000/api/v1/merchants/:id/favorite_customer'
 'http://localhost:3000/api/v1/merchants/:id/customers_with_pending_invoices'
-'http://localhost:3000/api/v1/merchants/random'
 'http://localhost:3000/api/v1/merchants/revenue?date=x'
 'http://localhost:3000/api/v1/merchants/most_revenue?quantity=x'
 'http://localhost:3000/api/v1/merchants/most_items?quantity=x'
@@ -117,7 +116,6 @@ the following urls in the browser after starting the server using `rails s` in t
 'http://localhost:3000/api/v1/customers/:id/transactions'
 'http://localhost:3000/api/v1/customers/:id/invoices'
 'http://localhost:3000/api/v1/customers/:id/favorite_merchant'
-'http://localhost:3000/api/v1/customers/random'
 'http://localhost:3000/api/v1/customers/find?parameter=x'
 'http://localhost:3000/api/v1/customers/find_all?parameter=x'
 
@@ -132,7 +130,6 @@ valid search parameters for customers are id, first_name, last_name, created_at,
 'http://localhost:3000/api/v1/invoices/:id/items'
 'http://localhost:3000/api/v1/invoices/:id/invoice_items'
 'http://localhost:3000/api/v1/invoices/:id/customer'
-'http://localhost:3000/api/v1/invoices/random'
 'http://localhost:3000/api/v1/invoices/find?parameter=x'
 'http://localhost:3000/api/v1/invoices/find_all?parameter=x'
 
@@ -144,7 +141,6 @@ valid search parameters for invoices are id, status, customer_id, merchant_id, c
 'http://localhost:3000/api/v1/invoice_items/:id'
 'http://localhost:3000/api/v1/invoice_items/:id/item'
 'http://localhost:3000/api/v1/invoice_items/:id/invoice'
-'http://localhost:3000/api/v1/invoice_items/random'
 'http://localhost:3000/api/v1/invoice_items/find?parameter=x'
 'http://localhost:3000/api/v1/invoice_items/find_all?parameter=x'
 
@@ -155,7 +151,6 @@ valid search parameters for invoice_items are id, item_id, invoice_id, quantity,
 'http://localhost:3000/api/v1/transactions/'
 'http://localhost:3000/api/v1/transactions/:id'
 'http://localhost:3000/api/v1/transactions/:id/invoice'
-'http://localhost:3000/api/v1/transactions/random'
 'http://localhost:3000/api/v1/transactions/find_all?parameter=x'
 'http://localhost:3000/api/v1/transactions/find?parameter=x'
 
@@ -169,7 +164,6 @@ created_at, updated_at
 'http://localhost:3000/api/v1/items/:id/merchant'
 'http://localhost:3000/api/v1/items/:id/invoice_items'
 'http://localhost:3000/api/v1/items/:id/best_day'
-'http://localhost:3000/api/v1/items/random'
 'http://localhost:3000/api/v1/items/most_revenue?quantity=x'
 'http://localhost:3000/api/v1/items/most_items?quantity=x'
 'http://localhost:3000/api/v1/items/find?parameter=x'
@@ -177,6 +171,11 @@ created_at, updated_at
 
 valid search parameters for items are id, name, description, unti_price, created_at, updated_at, merchant_id
 ```
+
+## Schema
+
+![Rales Engine Schema](https://raw.githubusercontent.com/tylermarshal/rales_engine/master/app/assets/images/Screen%20Shot%202018-03-26%20at%209.40.08%20PM.png)
+
 ## Creators
 [Young Jung](https://github.com/seoulstice)
 [Tyler Madsen](https://github.com/tylermarshal)
