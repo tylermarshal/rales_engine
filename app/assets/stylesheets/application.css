@@ -15,9 +15,9 @@
  */
 
 html {
-  background-color: #d8d8d8;
+  background-color: #afafaf;
 }
 
-body {
+.content {
   width: 80%;
 }
