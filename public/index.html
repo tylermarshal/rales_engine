@@ -1,0 +1,91 @@
+<h1>API Endpoints</h1>
+
+<p>Rales Engine is an API that exists to expose business intelligence.  This allows a user to
+interact with various endpoints through the browser.  These include endpoints for the Merchants, Customers,
+Invoices, Items, Invoice Items and Transactions databases related to searches by attributes, by their associations,
+and endpoints related to business intelligence/analysis</p>
+
+<h3>For the Merchants API endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/merchants
+https://rales-engine-api.herokuapp.com/api/v1/customers/:id
+https://rales-engine-api.herokuapp.com/api/v1/merchants/:id/revenue?date=x
+https://rales-engine-api.herokuapp.com/api/v1/merchants/:id/items
+https://rales-engine-api.herokuapp.com/api/v1/merchants/:id/invoices
+https://rales-engine-api.herokuapp.com/api/v1/merchants/:id/favorite_customer
+https://rales-engine-api.herokuapp.com/api/v1/merchants/:id/customers_with_pending_invoices
+https://rales-engine-api.herokuapp.com/api/v1/merchants/random
+https://rales-engine-api.herokuapp.com/api/v1/merchants/revenue?date=x
+https://rales-engine-api.herokuapp.com/api/v1/merchants/most_revenue?quantity=x
+https://rales-engine-api.herokuapp.com/api/v1/merchants/most_items?quantity=x
+https://rales-engine-api.herokuapp.com/api/v1/merchants/find?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/merchants/find_all?parameter=x
+
+<p>valid Merchant search parameters are id, name, created_at, and updated_at</p>
+
+<h3>For the Customers API endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/customers/
+https://rales-engine-api.herokuapp.com/api/v1/customers/:id
+https://rales-engine-api.herokuapp.com/api/v1/customers/:id/transactions
+https://rales-engine-api.herokuapp.com/api/v1/customers/:id/invoices
+https://rales-engine-api.herokuapp.com/api/v1/customers/:id/favorite_merchant
+https://rales-engine-api.herokuapp.com/api/v1/customers/random
+https://rales-engine-api.herokuapp.com/api/v1/customers/find?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/customers/find_all?parameter=x
+
+<p>valid search parameters for customers are id, first_name, last_name, created_at, and updated_at</p>
+
+<h3>For the Invoices API endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/invoices/
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id/transactions
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id/merchant
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id/items
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id/invoice_items
+https://rales-engine-api.herokuapp.com/api/v1/invoices/:id/customer
+https://rales-engine-api.herokuapp.com/api/v1/invoices/random
+https://rales-engine-api.herokuapp.com/api/v1/invoices/find?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/invoices/find_all?parameter=x
+
+<p>valid search parameters for invoices are id, status, customer_id, merchant_id, created_at, updated_at</p>
+
+<h3>For the Invoice Items endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/:id
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/:id/item
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/:id/invoice
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/random
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/find?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/invoice_items/find_all?parameter=x
+
+<p>valid search parameters for invoice_items are id, item_id, invoice_id, quantity, unit_price, created_at, updated_at</p>
+
+<h3>For the Transactions endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/transactions/
+https://rales-engine-api.herokuapp.com/api/v1/transactions/:id
+https://rales-engine-api.herokuapp.com/api/v1/transactions/:id/invoice
+https://rales-engine-api.herokuapp.com/api/v1/transactions/random
+https://rales-engine-api.herokuapp.com/api/v1/transactions/find_all?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/transactions/find?parameter=x
+
+<p>valid search parameters for transactions are id, invoice_id, credit_card_number, credit_card_expiration_date, result,
+created_at, updated_at</p>
+
+<h3>For the Items endpoints</h3>
+
+https://rales-engine-api.herokuapp.com/api/v1/items/
+https://rales-engine-api.herokuapp.com/api/v1/items/:id
+https://rales-engine-api.herokuapp.com/api/v1/items/:id/merchant
+https://rales-engine-api.herokuapp.com/api/v1/items/:id/invoice_items
+https://rales-engine-api.herokuapp.com/api/v1/items/:id/best_day
+https://rales-engine-api.herokuapp.com/api/v1/items/random
+https://rales-engine-api.herokuapp.com/api/v1/items/most_revenue?quantity=x
+https://rales-engine-api.herokuapp.com/api/v1/items/most_items?quantity=x
+https://rales-engine-api.herokuapp.com/api/v1/items/find?parameter=x
+https://rales-engine-api.herokuapp.com/api/v1/items/find_all?parameter=x
+
+<p>valid search parameters for items are id, name, description, unti_price, created_at, updated_at, merchant_id</p>
