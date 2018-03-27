@@ -7,7 +7,7 @@ Rales (Sales) Engine is a RESTful API for eCommerce business intelligence. It is
 Fork the Rales Engine Github repository and clone it down into a directory of your choosing.
 
 ```
-git clone https://github.com/seoulstice/rales_engine.git
+git clone https://github.com/tylermarshal/rales_engine.git
 ```
 
 In this same directory, you will want to clone down the Rales Engine spec harness.
